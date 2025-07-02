@@ -1,0 +1,65 @@
+<!-- profile.component.html -->
+<div class="background-blur"></div>
+
+<div class="content">
+  <div class="hero">
+    <img src="assets/profile.png" alt="Profile" class="profile-pic" />
+    <h1>{{ user.name }}</h1>
+    <h2>{{ user.title }}</h2>
+    <p class="intro">
+      Empowering investment strategies through data-driven risk analysis and
+      portfolio optimization.
+    </p>
+  </div>
+
+  <section class="about">
+    <h3>About Me</h3>
+    <p>{{ user.bio }}</p>
+  </section>
+
+  <section class="expertise">
+    <h3>Expertise</h3>
+    <ul>
+      <li>Portfolio Diversification</li>
+      <li>Risk Modeling (VaR, CVaR)</li>
+      <li>Asset Allocation Strategy</li>
+      <li>Performance Attribution</li>
+      <li>Market Forecasting</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h3>Featured Projects</h3>
+    <div class="project" *ngFor="let project of user.projects">
+      <h4>{{ project.name }}</h4>
+      <p>{{ project.description }}</p>
+      <a *ngIf="project.link" [href]="project.link" target="_blank"
+        >View Case Study</a
+      >
+    </div>
+  </section>
+
+  <section class="tools">
+    <h3>Tools & Platforms</h3>
+    <div class="tool-list">
+      <img src="assets/icons/excel.svg" alt="Excel" />
+      <img src="assets/icons/python.svg" alt="Python" />
+      <img src="assets/icons/r.svg" alt="R" />
+      <img src="assets/icons/bloomberg.svg" alt="Bloomberg" />
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Contact</h3>
+    <p><strong>Email:</strong> {{ user.contact.email }}</p>
+    <p><strong>Location:</strong> {{ user.contact.location }}</p>
+    <div class="social-links">
+      <a [href]="user.socialLinks.linkedin" target="_blank">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a [href]="user.socialLinks.github" target="_blank">
+        <img src="assets/icons/github.svg" alt="GitHub" />
+      </a>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.terms-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #111; /* slightly lighter black for content box */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ccc;
+}

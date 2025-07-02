@@ -1,0 +1,412 @@
+<div>
+  <header [ngClass]="{ 'header-scrolled': scrolledDown }">
+    <div class="logo">Lynqa Strategic Consulting</div>
+    <nav>
+      <ul>
+        <li><a class="menu" [routerLink]="['/']" fragment="hero">Home</a></li>
+        <li>
+          <a class="menu" [routerLink]="['/']" fragment="services">Services</a>
+        </li>
+        <li><a class="menu" [routerLink]="['/']" fragment="about">About</a></li>
+        <li>
+          <a class="menu" [routerLink]="['/']" fragment="contact">Contact</a>
+        </li>
+        <li><a class="menu" [routerLink]="['/terms']">Terms of Use</a></li>
+        <li><a class="menu" [routerLink]="['/privacy']">PrivacyPolicy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div *ngIf="!termsVisible">
+    <section class="hero" id="hero">
+      <h1>Where Structure Meets Strategy</h1>
+      <p>
+        Elite strategic consulting for yield-driven corporates and investors
+      </p>
+    </section>
+
+    <section class="value-prop" id="value">
+      <div class="value-container">
+        <h2>Navigating Complexity With Clarity</h2>
+        <hr class="divider" />
+
+        <blockquote>
+          "Opportunities don’t just appear,they’re structured."
+        </blockquote>
+
+        <p>
+          In today’s evolving market, decision-makers face constant shifts -
+          from credit cycles and yield volatility to investor sentiment and
+          regulatory landscapes. For decision-makers, this means one thing:
+          complexity.
+          <br /><br />
+          These challenges bring both threats and rare monetizable windows.
+          That’s where Lynqa steps in.
+        </p>
+
+        <div class="value-highlights">
+          <div class="v-box">
+            <h3>We Help You</h3>
+            <ul class="custom-list">
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-top: 0.2rem;
+                  "
+                />Define your capital story-clearly and convincingly
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-top: 0.2rem;
+                  "
+                />Frame the right deal, at the right time
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-top: 0.2rem;
+                  "
+                />
+                Streamline documentation and deal presentation
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-top: 0.2rem;
+                  "
+                />
+                Remove ambiguity in documentation & negotiation
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-top: 0.2rem;
+                  "
+                />Structure terms aligned with market sentiment
+              </li>
+            </ul>
+          </div>
+
+          <div class="v-box">
+            <h3>What You Avoid</h3>
+            <ul>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="width: 18px; height: 18px; vertical-align: middle"
+                />
+                Paying yield premiums unnecessarily
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="width: 18px; height: 18px; vertical-align: middle"
+                />
+                Misalignment between need and market appetite
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="width: 18px; height: 18px; vertical-align: middle"
+                />
+                Stalled negotiations due to lack of clarity
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="width: 18px; height: 18px; vertical-align: middle"
+                />
+                Incomplete documentation cycles
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mistakes-v2" id="mistakes">
+      <div class="mistakes-v2-container">
+        <div class="mistakes-text">
+          <h2>Capital Mistakes We Help You Avoid</h2>
+          <p class="subtext">
+            In the rush to raise capital, even well-meaning enterprises fall
+            into traps that cost time, credibility, and yield. Here's what Lynqa
+            helps you avoid:
+          </p>
+          <ul class="mistakes-list">
+            <li>
+              <strong>Chasing Funds Without Strategy</strong> - Weak negotiation
+              leverage, confused capital direction.
+            </li>
+            <li>
+              <strong>Overlooking Documentation Precision</strong> - Delays
+              investor trust, reduces execution confidence.
+            </li>
+            <li>
+              <strong>Ignoring Market Yield Signals</strong> - Mispriced debt,
+              unnecessary premium payouts.
+            </li>
+            <li>
+              <strong>Mixing Advice with Distribution</strong> - Creates SEBI
+              compliance red flags, blurs roles.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mistakes-image">
+          <img
+            src="assets/images/boardroom.jpeg"
+            alt="Boardroom Strategy Session"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-container">
+        <div class="services-left">
+          <h2>Services</h2>
+          <div class="service">
+            <h3>Capital Structuring Support</h3>
+            <p>
+              Help businesses navigate funding instruments like Commercial
+              Papers and NCDs with tailored structuring aligned to market
+              expectations.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Strategic Fund-Raising Management</h3>
+            <p>
+              Provide end-to-end support for private market capital access -
+              defining timing, positioning, and execution steps with clarity.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Deal Positioning & Term Coordination</h3>
+            <p>
+              Assist clients in preparing realistic term sheets and aligning
+              deal contours with market appetite to ensure efficient
+              negotiation.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Documentation & Process Flow</h3>
+            <p>
+              Streamline the preparation and review of documentation packages,
+              ensuring speed, clarity, and investor readiness.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="services-right">
+      <h2>Why Us</h2>
+      <p>
+        At Lynqa, we don’t offer advisory. We deliver precision.<br /><br />
+        Our strength lies in bringing structure to chaos—bridging market behavior with business intent through intelligent positioning, sharp documentation, and seamless capital coordination.
+        <br /><br />
+        We don't distribute. We don’t pitch. We simply make the deals possible.
+      </p>
+    </div> -->
+      </div>
+    </section>
+    <app-why-us></app-why-us>
+
+    <section class="edge" id="edge">
+      <div class="edge-flex-upgrade">
+        <!-- TEXT CONTENT -->
+        <div class="edge-content">
+          <h2>Why Lynqa</h2>
+          <p class="lead-para">
+            In capital markets, timing is leverage. Lynqa exists to sharpen it.
+          </p>
+
+          <ul class="why-list glow-list">
+            <li>
+              <strong> Purpose-Driven Structuring:</strong> Deal logic tailored
+              to business not hype.
+            </li>
+            <li>
+              <strong> Strategic Intelligence, Not Advice:</strong> We engineer
+              execution not opinions.
+            </li>
+            <li>
+              <strong> Seamless Documentation:</strong> Precision documents that
+              close faster, cleaner.
+            </li>
+            <li>
+              <strong> Market-Calibrated Execution:</strong> Terms and timing
+              aligned with real-world behavior.
+            </li>
+            <li>
+              <strong> Regulatory Discipline:</strong> Compliant. Sharp.
+              Unblurred.
+            </li>
+          </ul>
+
+          <blockquote class="tagline">
+            “At Lynqa, we don't offer services, we engineer financial outcomes.”
+          </blockquote>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="about-image">
+          <img src="assets/images/handshake.png" alt="Professional handshake" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-flex">
+        <div class="about-text">
+          <h2>About Lynqa</h2>
+          <p>
+            Lynqa Strategic Finance is a boutique capital strategy partner, not
+            a distributor, not an advisor. We work behind the spotlight, helping
+            businesses align intent with investor expectations through strategic
+            documentation, deal structuring, and market-savvy execution.
+          </p>
+          <p>
+            We don’t pitch products or chase mandates. We decode market
+            appetite, sharpen deal narratives, and facilitate precision-led
+            negotiations for fund-raising instruments like Commercial Papers and
+            Non-Convertible Debentures (NCDs).
+          </p>
+          <p>
+            By remaining unregistered with SEBI, we focus purely on management
+            consulting, ensuring compliance boundaries are respected, while
+            companies benefit from sophisticated structuring and execution
+            clarity.
+          </p>
+          <p>
+            Whether you're raising your first CP or optimizing recurring
+            issuance, Lynqa steps in where noise ends and strategy begins.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="assets/images/about-meeting.jpg"
+            alt="Strategic corporate meeting"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>Are you SEBI registered?</h3>
+          <p>
+            No. Lynqa Strategic Finance does not provide investment advice or
+            distribute financial products. We do not fall under SEBI’s
+            registration mandate.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>So what exactly do you offer?</h3>
+          <p>
+            We assist companies with capital strategy, deal negotiation,
+            documentation, and structuring - specifically around debt
+            instruments like commercial papers and NCDs.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you help investors?</h3>
+          <p>
+            We do not manage investor capital or offer investment advice. Our
+            engagement is with companies seeking to raise funds at optimal
+            terms.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you draft term sheets or support documentation?</h3>
+          <p>
+            Yes, we assist in drafting term sheets, coordinating documentation,
+            and facilitating clean execution of structured debt deals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Reach out to discuss your next deal or schedule a strategic
+        consultation.
+      </p>
+      <div class="contact-links">
+        <form
+          method="POST"
+          action="https://formsubmit.co/el/yoxato"
+          enctype="multipart/form-data"
+          class="contact-form"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Full Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email Address" />
+          <input type="text" name="_honey" style="display: none" />
+
+          <label for="message">Message</label>
+          <textarea
+            placeholder="Your Message"
+            class="form-control"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <app-footer></app-footer>
+    </section>
+  </div>
+</div>
+<app-terms *ngIf="termsVisible" (back)="hideTerms()"></app-terms>

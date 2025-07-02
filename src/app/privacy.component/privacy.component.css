@@ -1,0 +1,38 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.terms-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  line-height: 1.8;
+  background-color: #140f0f;
+  border-radius: 12px;
+  color: #f5f5f5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.terms-container h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  color: #c0a76e;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  margin-top: 30px;
+  background-color: #c0a76e;
+  color: #0f0f0f;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
