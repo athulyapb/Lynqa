@@ -3,7 +3,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { TermsComponent } from '../terms-component/terms.component';
 import { CommonModule } from '@angular/common';
 import { WhyUsComponent } from '../why-us.component/why-us.component';
-import { PrivacyComponent } from '../privacy.component/privacy.component';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 
@@ -14,7 +13,6 @@ import { FooterComponent } from '../footer/footer.component';
     TermsComponent,
     CommonModule,
     WhyUsComponent,
-    PrivacyComponent,
     RouterModule,
     FooterComponent,
   ],

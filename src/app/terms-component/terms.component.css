@@ -18,14 +18,14 @@
 }
 
 .cta-button {
-  background-color: #fff;
-  color: #000;
-  border: none;
+  margin-top: 30px;
+  background-color: #c0a76e;
+  color: #0f0f0f;
   padding: 12px 20px;
-  border-radius: 6px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
