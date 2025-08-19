@@ -425,20 +425,20 @@
           <label for="name">Name</label>
           <input
             type="text"
-            name="from_name"
+            name="name"
+            [(ngModel)]="form.name"
             class="form-control"
             placeholder="Full Name"
-            ngModel
             required
           />
 
           <label for="email">Email</label>
           <input
             type="email"
-            name="reply_to"
+            name="email"
+            [(ngModel)]="form.email"
             placeholder="Email Address"
             class="form-control"
-            ngModel
             required
           />
 
@@ -446,9 +446,9 @@
           <textarea
             name="message"
             class="form-control"
+            [(ngModel)]="form.message"
             placeholder="Your Message"
             rows="10"
-            ngModel
             required
           ></textarea>
 

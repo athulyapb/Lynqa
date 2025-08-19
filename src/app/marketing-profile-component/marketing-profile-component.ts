@@ -96,10 +96,14 @@ export class MarketingProfileComponent implements AfterViewInit {
     event.preventDefault();
 
     emailjs
-      .sendForm(
+      .send(
         'service_po4h19s', // ⛔ Replace this
         'template_2l35w34', // ⛔ Replace this
-        event.target as HTMLFormElement,
+        {
+          from_name: this.form.name,
+          message: this.form.message,
+          email: this.form.email,
+        },
         'YzsmEVGQ0e8ltSB72',
       )
       .then(
