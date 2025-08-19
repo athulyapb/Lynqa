@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 
 body {
   background: #0f0f0f;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #f5f5f5;
   line-height: 1.6;
 }
@@ -37,9 +37,9 @@ header {
 }
 
 .logo {
-  font-family: "Open Sans", serif;
+  font-family: 'Libre Baskerville', Times, serif;
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   letter-spacing: 1.3px;
   color: #f5f5f5;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
@@ -52,7 +52,7 @@ header {
 
 .services,
 .about,
-.edge,
+.why-lynqa,
 .faq,
 .value-prop .contact {
   background:
@@ -66,7 +66,7 @@ header {
 .menu {
   font-family: "Open Sans", serif;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   color: #f5f5f5;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
@@ -98,7 +98,7 @@ nav a:hover {
 
 .hero {
   background:
-    linear-gradient(rgba(10, 10, 10, 0.4), rgba(19, 16, 16, 0.4)),
+    linear-gradient(rgba(10, 10, 10, 0.6), rgba(19, 16, 16, 0.6)),
     url("/assets/images/hero-bg.jpg") no-repeat center center/cover;
   padding: 100px 40px;
   text-align: center;
@@ -110,8 +110,8 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3.6rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
   margin-bottom: 10px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
@@ -138,15 +138,15 @@ nav a:hover {
 }
 
 .value-prop h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #c0a76e;
-  font-family: "Cinzel", serif;
+  font-family: 'Libre Baskerville', Times, serif;
   margin-bottom: 40px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
 .value-prop p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #dddddd;
   line-height: 1.8;
   margin-bottom: 50px;
@@ -154,7 +154,7 @@ nav a:hover {
 
 .value-prop blockquote {
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #c0a76e;
   margin-bottom: 30px;
 }
@@ -185,7 +185,7 @@ nav a:hover {
 }
 
 .v-box h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ffffff;
   margin-bottom: 15px;
 }
@@ -196,7 +196,7 @@ nav a:hover {
 }
 
 .v-box li {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   color: #bbbbbb;
 }
@@ -210,7 +210,7 @@ nav a:hover {
 .services h2,
 .about h2,
 .contact h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #c0a76e;
 }
@@ -272,14 +272,14 @@ nav a:hover {
 }
 
 .service h3 {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #f5f5f5;
   margin-bottom: 10px;
 }
 
 .service p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #cccccc;
   line-height: 1.6;
 }
@@ -316,38 +316,117 @@ nav a:hover {
   margin: 5px 0;
 }
 
-.edge {
-  background-color: #1a1a1a;
+.why-lynqa-section {
+  background: linear-gradient(to bottom, rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 1)),
+              url('/assets/images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 100px 60px;
   color: #f5f5f5;
-  text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
-.edge-container {
-  max-width: 900px;
+.why-lynqa-flex {
+ display: flex;
+  align-items: center; /* 👈 This centers it vertically */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
   margin: 0 auto;
 }
 
-.edge h2 {
-  font-size: 2.5rem;
+.why-text {
+  flex: 1 1 55%;
+}
+
+.why-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.why-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.why-image img:hover {
+  transform: scale(1.03);
+}
+
+.why-title {
+  font-size: 2rem;
+  font-family: 'Libre Baskerville', Times, serif;
   color: #c0a76e;
-  font-family: "Cinzel", serif;
-  margin-bottom: 30px;
-}
-
-.edge ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1.2rem;
+  margin-bottom: 10px;
   text-align: left;
-  line-height: 1.8;
 }
 
-.edge li {
-  margin-bottom: 15px;
-  padding-left: 1.2em;
-  position: relative;
+.why-subtext {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 40px;
 }
+
+.why-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #dddddd;
+}
+
+.why-content strong {
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.lynqa-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #c0a76e;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(192, 167, 110, 0.3);
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .why-lynqa-section {
+    padding: 60px 20px;
+  }
+
+  .why-lynqa-flex {
+    flex-direction: column;
+  }
+
+  .why-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .why-subtext {
+    text-align: center;
+  }
+
+  .why-content p {
+    font-size: 1.15rem;
+  }
+
+  .why-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .lynqa-quote {
+    font-size: 1.2rem;
+  }
+}
+
 
 .about-section {
   padding: 100px 60px;
@@ -369,16 +448,16 @@ nav a:hover {
 
 .about-text {
   flex: 1 1 55%;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   color: #dddddd;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'Libre Baskerville', Times, serif;
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #c0a76e;
-  font-family: "Cinzel", serif;
+  font-family: 'Libre Baskerville', Times, serif;
   margin-bottom: 20px;
 }
 
@@ -411,9 +490,9 @@ nav a:hover {
 }
 
 .faq h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #c0a76e;
-  font-family: "Cinzel", serif;
+  font-family: 'Libre Baskerville', Times, serif;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -430,7 +509,7 @@ nav a:hover {
 
 .faq-item p {
   color: #bbbbbb;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -679,14 +758,14 @@ nav a:hover {
 }
 
 .mistakes-text h2 {
-  font-size: 2.5rem;
-  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  font-family: 'Libre Baskerville', Times, serif;
   color: #c0a76e;
   margin-bottom: 20px;
 }
 
 .mistakes-text .subtext {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #dddddd;
   margin-bottom: 30px;
 }
@@ -694,7 +773,7 @@ nav a:hover {
 .mistakes-list {
   list-style: none;
   padding: 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.8;
 }
 
@@ -749,14 +828,14 @@ nav a:hover {
 }
 
 .edge-content h2 {
-  font-size: 3rem;
-  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  font-family: 'Libre Baskerville', Times, serif;
   color: #c0a76e;
   margin-bottom: 20px;
 }
 
 .lead-para {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
   margin-bottom: 25px;
   color: #dddddd;
@@ -817,7 +896,7 @@ nav a:hover {
 
   .logo,
   .header-scrolled .logo {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transition: none !important;
   }
   

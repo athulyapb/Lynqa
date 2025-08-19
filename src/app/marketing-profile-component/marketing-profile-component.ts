@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { WhyUsComponent } from '../why-us.component/why-us.component';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
+import emailjs from '@emailjs/browser';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-marketing-profile-component',
@@ -15,6 +17,7 @@ import { FooterComponent } from '../footer/footer.component';
     WhyUsComponent,
     RouterModule,
     FooterComponent,
+    FormsModule
   ],
   templateUrl: './marketing-profile-component.html',
   styleUrl: './marketing-profile-component.css',
@@ -79,6 +82,23 @@ export class MarketingProfileComponent implements AfterViewInit {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }, 100);
+    });
+  }
+
+    sendEmail(event: Event) {
+    event.preventDefault();
+
+    emailjs.sendForm(
+      'service_po4h19s',    // ⛔ Replace this
+      'template_2l35w34',   // ⛔ Replace this
+      event.target as HTMLFormElement,
+      'YzsmEVGQ0e8ltSB72'
+    )
+    .then(() => {
+      alert("💌 Message sent successfully!");
+    }, (error) => {
+      console.error("Failed...", error);
+      alert("❌ Message sending failed. Please try again.");
     });
   }
 }

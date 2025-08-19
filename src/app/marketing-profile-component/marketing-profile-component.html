@@ -5,16 +5,21 @@
       <ul>
         <li><a class="menu" [routerLink]="['/']" fragment="hero">Home</a></li>
         <li>
-          <a class="menu" [routerLink]="['/']" fragment="services">Services</a>
+          <a class="menu" [routerLink]="['/']" fragment="about">About</a>
         </li>
-        <li><a class="menu" [routerLink]="['/']" fragment="about">About</a></li>
+        <li><a class="menu" [routerLink]="['/']" fragment="services">Services</a></li>
         <li>
           <a class="menu" [routerLink]="['/']" fragment="contact">Contact</a>
         </li>
-        <li><a class="menu" [routerLink]="['/terms']">Terms of Use</a></li>
-        <li><a class="menu" [routerLink]="['/privacy']">Privacy Policy</a></li>
+        <!-- <li><a class="menu" [routerLink]="['/terms']">Terms of Use</a></li> -->
+        <!-- <li><a class="menu" [routerLink]="['/privacy']">Privacy Policy</a></li> -->
       </ul>
     </nav>
+    <!-- Add this inside the <head> tag -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+
   </header>
 
   <div *ngIf="!termsVisible">
@@ -228,82 +233,69 @@
           </div>
         </div>
 
-        <!-- <div class="services-right">
-      <h2>Why Us</h2>
-      <p>
-        At Lynqa, we don’t offer advisory. We deliver precision.<br /><br />
-        Our strength lies in bringing structure to chaos—bridging market behavior with business intent through intelligent positioning, sharp documentation, and seamless capital coordination.
-        <br /><br />
-        We don't distribute. We don’t pitch. We simply make the deals possible.
-      </p>
-    </div> -->
       </div>
     </section>
     <app-why-us></app-why-us>
 
-    <section class="edge" id="edge">
-      <div class="edge-flex-upgrade">
-        <!-- TEXT CONTENT -->
-        <div class="edge-content">
-          <h2>Why Lynqa</h2>
-          <p class="lead-para">
-            In capital markets, timing is leverage. Lynqa exists to sharpen it.
-          </p>
+    <section id="why-lynqa" class="why-lynqa-section">
+  <div class="why-lynqa-flex">
+    <!-- Text Block -->
+    <div class="why-text">
+      <h2 class="why-title">Why Lynqa</h2>
+      <p class="why-subtext">
+        <em>In capital markets, timing is leverage. Lynqa exists to sharpen it.</em>
+      </p>
 
-          <ul class="why-list glow-list">
-            <li>
-              <strong> Purpose-Driven Structuring:</strong> Deal logic tailored
-              to business not hype.
-            </li>
-            <li>
-              <strong> Strategic Intelligence, Not Advice:</strong> We engineer
-              execution not opinions.
-            </li>
-            <li>
-              <strong> Seamless Documentation:</strong> Precision documents that
-              close faster, cleaner.
-            </li>
-            <li>
-              <strong> Market-Calibrated Execution:</strong> Terms and timing
-              aligned with real-world behavior.
-            </li>
-            <li>
-              <strong> Regulatory Discipline:</strong> Compliant. Sharp.
-              Unblurred.
-            </li>
-          </ul>
+      <div class="why-content">
+        <p>
+          Lynqa isn’t just a consulting firm, it’s a curated circle of capital structuring professionals with deep domain expertise forged through real-world dealmaking. Our team comprises specialists with razor-sharp acumen in fund structuring, regulatory frameworks and institutional documentation -all seasoned in navigating the nuances of credit markets and investor dynamics.
+        </p>
 
-          <blockquote class="tagline">
-            “At Lynqa, we don't offer services, we engineer financial outcomes.”
-          </blockquote>
-        </div>
+        <p>
+          What sets Lynqa apart is not just knowledge, but <strong>networked intelligence</strong>. We operate within a highly strategic ecosystem — deeply aligned with investment bankers, fund managers, treasury heads, and institutional stakeholders. These aren’t just contacts, they’re working relationships built on mutual respect and delivery credibility.
+        </p>
 
-        <!-- IMAGE -->
-        <div class="about-image">
-          <img src="assets/images/handshake.png" alt="Professional handshake" />
-        </div>
+        <p>
+          Our regulatory discipline isn’t an afterthought, it’s embedded in every process we design. We understand the boundaries, the compliance clarity and how to maneuver within them without compromising agility. We don’t blur lines; we draw them sharply.
+        </p>
+
+        <p>
+          We aren’t advisors selling opinions. We’re capital strategists engineering outcomes. With Lynqa, you don’t just access expertise — you unlock <strong>institutional capability</strong> with boutique intensity.
+        </p>
+
+        <blockquote class="lynqa-quote">
+          “At Lynqa, we don’t offer services. We deliver structured outcomes — quietly, cleanly, and precisely.”
+        </blockquote>
       </div>
-    </section>
+    </div>
+
+    <!-- Image Block -->
+    <div class="why-image">
+      <img src="/assets/images/handshake.png" alt="Professional handshake" />
+    </div>
+  </div>
+</section>
+
 
     <section class="about-section" id="about">
       <div class="about-flex">
         <div class="about-text">
           <h2>About Lynqa</h2>
           <p>
-            Lynqa Strategic Finance is a boutique capital strategy partner, not
+            Lynqa Strategic Consulting is a boutique capital strategy partner, not
             a distributor, not an advisor. We work behind the spotlight, helping
             businesses align intent with investor expectations through strategic
-            documentation, deal structuring, and market-savvy execution.
+            documentation, deal structuring and market-savvy execution.
           </p>
           <p>
             We don’t pitch products or chase mandates. We decode market
-            appetite, sharpen deal narratives, and facilitate precision-led
+            appetite, sharpen deal narratives and facilitate precision-led
             negotiations for fund-raising instruments like Commercial Papers and
             Non-Convertible Debentures (NCDs).
           </p>
           <p>
             By remaining unregistered with SEBI, we focus purely on management
-            consulting, ensuring compliance boundaries are respected, while
+            consulting, ensuring compliance boundaries are respected while
             companies benefit from sophisticated structuring and execution
             clarity.
           </p>
@@ -336,7 +328,7 @@
         </div>
 
         <div class="faq-item">
-          <h3>So what exactly do you offer?</h3>
+          <h3>What exactly do Lynqa offer?</h3>
           <p>
             We assist companies with capital strategy, deal negotiation,
             documentation, and structuring - specifically around debt
@@ -344,6 +336,19 @@
           </p>
         </div>
 
+              <div class="faq-item">
+          <h3>What is the advantage of raising funds with Commercial Papers (CP)?</h3>
+          <p>
+            Commercial Papers (CPs) are short-term debt instruments that offer companies a faster, cheaper and cleaner way to access working capital without the baggage of long-term loans or bank negotiations.
+They’re typically issued at a lower interest rate than other debt options and don’t require collateral, making them ideal for creditworthy corporates looking to bridge liquidity gaps or optimize cash flow.
+          </p>
+        </div>  
+        <div class="faq-item">
+          <h3>What is the advantage of raising funds with Non-Convertible Debentures (NCDs)?</h3>
+          <p>
+            NCDs are long-term instruments that allow companies to lock in structured debt at fixed tenures and attractive yields without giving up equity or control. They're especially powerful for firms aiming to build predictable liability profiles.
+          </p>
+        </div>
         <div class="faq-item">
           <h3>Do you help investors?</h3>
           <p>
@@ -370,38 +375,39 @@
         consultation.
       </p>
       <div class="contact-links">
-        <form
-          method="POST"
-          action="https://formsubmit.co/el/yoxato"
-          enctype="multipart/form-data"
-          class="contact-form"
-        >
-          <input type="hidden" name="_captcha" value="false" />
+           <form (submit)="sendEmail($event)" #contactForm="ngForm" class="contact-form">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="from_name"
+        class="form-control"
+        placeholder="Full Name"
+        ngModel
+        required
+      />
 
-          <label for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            class="form-control"
-            placeholder="Full Name"
-            required
-          />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="reply_to"
+        placeholder="Email Address"
+        class="form-control"
+        ngModel
+        required
+      />
 
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="Email Address" />
-          <input type="text" name="_honey" style="display: none" />
+      <label for="message">Message</label>
+      <textarea
+        name="message"
+        class="form-control"
+        placeholder="Your Message"
+        rows="10"
+        ngModel
+        required
+      ></textarea>
 
-          <label for="message">Message</label>
-          <textarea
-            placeholder="Your Message"
-            class="form-control"
-            name="message"
-            rows="10"
-            required
-          ></textarea>
-
-          <button type="submit" class="cta-button">Send Message</button>
-        </form>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
       </div>
     </section>
     <section>
