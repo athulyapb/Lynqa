@@ -7,7 +7,9 @@
         <li>
           <a class="menu" [routerLink]="['/']" fragment="about">About</a>
         </li>
-        <li><a class="menu" [routerLink]="['/']" fragment="services">Services</a></li>
+        <li>
+          <a class="menu" [routerLink]="['/']" fragment="services">Services</a>
+        </li>
         <li>
           <a class="menu" [routerLink]="['/']" fragment="contact">Contact</a>
         </li>
@@ -16,10 +18,14 @@
       </ul>
     </nav>
     <!-- Add this inside the <head> tag -->
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
   </header>
 
   <div *ngIf="!termsVisible">
@@ -232,60 +238,83 @@
             </p>
           </div>
         </div>
-
       </div>
     </section>
     <app-why-us></app-why-us>
 
     <section id="why-lynqa" class="why-lynqa-section">
-  <div class="why-lynqa-flex">
-    <!-- Text Block -->
-    <div class="why-text">
-      <h2 class="why-title">Why Lynqa</h2>
-      <p class="why-subtext">
-        <em>In capital markets, timing is leverage. Lynqa exists to sharpen it.</em>
-      </p>
+      <div class="why-lynqa-flex">
+        <!-- Text Block -->
+        <div class="why-text">
+          <h2 class="why-title">Why Lynqa</h2>
+          <p class="why-subtext">
+            <em
+              >In capital markets, timing is leverage. Lynqa exists to sharpen
+              it.</em
+            >
+          </p>
 
-      <div class="why-content">
-        <p>
-          Lynqa isn’t just a consulting firm, it’s a curated circle of capital structuring professionals with deep domain expertise forged through real-world dealmaking. Our team comprises specialists with razor-sharp acumen in fund structuring, regulatory frameworks and institutional documentation -all seasoned in navigating the nuances of credit markets and investor dynamics.
-        </p>
+          <div class="why-content">
+            <p>
+              Lynqa isn’t just a consulting firm, it’s a curated circle of
+              capital structuring professionals with deep domain expertise
+              forged through real-world dealmaking. Our team comprises
+              specialists with razor-sharp acumen in fund structuring,
+              regulatory frameworks and institutional documentation -all
+              seasoned in navigating the nuances of credit markets and investor
+              dynamics.
+            </p>
 
-        <p>
-          What sets Lynqa apart is not just knowledge, but <strong>networked intelligence</strong>. We operate within a highly strategic ecosystem — deeply aligned with investment bankers, fund managers, treasury heads, and institutional stakeholders. These aren’t just contacts, they’re working relationships built on mutual respect and delivery credibility.
-        </p>
+            <p>
+              What sets Lynqa apart is not just knowledge, but
+              <strong>networked intelligence</strong>. We operate within a
+              highly strategic ecosystem — deeply aligned with investment
+              bankers, fund managers, treasury heads, and institutional
+              stakeholders. These aren’t just contacts, they’re working
+              relationships built on mutual respect and delivery credibility.
+            </p>
 
-        <p>
-          Our regulatory discipline isn’t an afterthought, it’s embedded in every process we design. We understand the boundaries, the compliance clarity and how to maneuver within them without compromising agility. We don’t blur lines; we draw them sharply.
-        </p>
+            <p>
+              Our regulatory discipline isn’t an afterthought, it’s embedded in
+              every process we design. We understand the boundaries, the
+              compliance clarity and how to maneuver within them without
+              compromising agility. We don’t blur lines; we draw them sharply.
+            </p>
 
-        <p>
-          We aren’t advisors selling opinions. We’re capital strategists engineering outcomes. With Lynqa, you don’t just access expertise — you unlock <strong>institutional capability</strong> with boutique intensity.
-        </p>
+            <p>
+              We aren’t advisors selling opinions. We’re capital strategists
+              engineering outcomes. With Lynqa, you don’t just access expertise
+              — you unlock <strong>institutional capability</strong> with
+              boutique intensity.
+            </p>
 
-        <blockquote class="lynqa-quote">
-          “At Lynqa, we don’t offer services. We deliver structured outcomes — quietly, cleanly, and precisely.”
-        </blockquote>
+            <blockquote class="lynqa-quote">
+              “At Lynqa, we don’t offer services. We deliver structured outcomes
+              — quietly, cleanly, and precisely.”
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Image Block -->
+        <div class="why-image">
+          <img
+            src="/assets/images/handshake.png"
+            alt="Professional handshake"
+          />
+        </div>
       </div>
-    </div>
-
-    <!-- Image Block -->
-    <div class="why-image">
-      <img src="/assets/images/handshake.png" alt="Professional handshake" />
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <section class="about-section" id="about">
       <div class="about-flex">
         <div class="about-text">
           <h2>About Lynqa</h2>
           <p>
-            Lynqa Strategic Consulting is a boutique capital strategy partner, not
-            a distributor, not an advisor. We work behind the spotlight, helping
-            businesses align intent with investor expectations through strategic
-            documentation, deal structuring and market-savvy execution.
+            Lynqa Strategic Consulting is a boutique capital strategy partner,
+            not a distributor, not an advisor. We work behind the spotlight,
+            helping businesses align intent with investor expectations through
+            strategic documentation, deal structuring and market-savvy
+            execution.
           </p>
           <p>
             We don’t pitch products or chase mandates. We decode market
@@ -336,17 +365,30 @@
           </p>
         </div>
 
-              <div class="faq-item">
-          <h3>What is the advantage of raising funds with Commercial Papers (CP)?</h3>
-          <p>
-            Commercial Papers (CPs) are short-term debt instruments that offer companies a faster, cheaper and cleaner way to access working capital without the baggage of long-term loans or bank negotiations.
-They’re typically issued at a lower interest rate than other debt options and don’t require collateral, making them ideal for creditworthy corporates looking to bridge liquidity gaps or optimize cash flow.
-          </p>
-        </div>  
         <div class="faq-item">
-          <h3>What is the advantage of raising funds with Non-Convertible Debentures (NCDs)?</h3>
+          <h3>
+            What is the advantage of raising funds with Commercial Papers (CP)?
+          </h3>
           <p>
-            NCDs are long-term instruments that allow companies to lock in structured debt at fixed tenures and attractive yields without giving up equity or control. They're especially powerful for firms aiming to build predictable liability profiles.
+            Commercial Papers (CPs) are short-term debt instruments that offer
+            companies a faster, cheaper and cleaner way to access working
+            capital without the baggage of long-term loans or bank negotiations.
+            They’re typically issued at a lower interest rate than other debt
+            options and don’t require collateral, making them ideal for
+            creditworthy corporates looking to bridge liquidity gaps or optimize
+            cash flow.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>
+            What is the advantage of raising funds with Non-Convertible
+            Debentures (NCDs)?
+          </h3>
+          <p>
+            NCDs are long-term instruments that allow companies to lock in
+            structured debt at fixed tenures and attractive yields without
+            giving up equity or control. They're especially powerful for firms
+            aiming to build predictable liability profiles.
           </p>
         </div>
         <div class="faq-item">
@@ -375,39 +417,43 @@ They’re typically issued at a lower interest rate than other debt options and 
         consultation.
       </p>
       <div class="contact-links">
-           <form (submit)="sendEmail($event)" #contactForm="ngForm" class="contact-form">
-      <label for="name">Name</label>
-      <input
-        type="text"
-        name="from_name"
-        class="form-control"
-        placeholder="Full Name"
-        ngModel
-        required
-      />
+        <form
+          (submit)="sendEmail($event)"
+          #contactForm="ngForm"
+          class="contact-form"
+        >
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="from_name"
+            class="form-control"
+            placeholder="Full Name"
+            ngModel
+            required
+          />
 
-      <label for="email">Email</label>
-      <input
-        type="email"
-        name="reply_to"
-        placeholder="Email Address"
-        class="form-control"
-        ngModel
-        required
-      />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="reply_to"
+            placeholder="Email Address"
+            class="form-control"
+            ngModel
+            required
+          />
 
-      <label for="message">Message</label>
-      <textarea
-        name="message"
-        class="form-control"
-        placeholder="Your Message"
-        rows="10"
-        ngModel
-        required
-      ></textarea>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            class="form-control"
+            placeholder="Your Message"
+            rows="10"
+            ngModel
+            required
+          ></textarea>
 
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
       </div>
     </section>
     <section>

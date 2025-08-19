@@ -5,11 +5,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    CommonModule,
-    MatIconModule,
-    RouterOutlet,
-  ],
+  imports: [CommonModule, MatIconModule, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

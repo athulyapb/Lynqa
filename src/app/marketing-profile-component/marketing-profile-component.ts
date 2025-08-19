@@ -7,6 +7,7 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 import emailjs from '@emailjs/browser';
 import { FormsModule } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-marketing-profile-component',
@@ -17,12 +18,18 @@ import { FormsModule } from '@angular/forms';
     WhyUsComponent,
     RouterModule,
     FooterComponent,
-    FormsModule
+    FormsModule,
   ],
   templateUrl: './marketing-profile-component.html',
   styleUrl: './marketing-profile-component.css',
 })
 export class MarketingProfileComponent implements AfterViewInit {
+  form = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -85,20 +92,29 @@ export class MarketingProfileComponent implements AfterViewInit {
     });
   }
 
-    sendEmail(event: Event) {
+  sendEmail(event: Event) {
     event.preventDefault();
 
-    emailjs.sendForm(
-      'service_po4h19s',    // ⛔ Replace this
-      'template_2l35w34',   // ⛔ Replace this
-      event.target as HTMLFormElement,
-      'YzsmEVGQ0e8ltSB72'
-    )
-    .then(() => {
-      alert("💌 Message sent successfully!");
-    }, (error) => {
-      console.error("Failed...", error);
-      alert("❌ Message sending failed. Please try again.");
-    });
+    emailjs
+      .sendForm(
+        'service_po4h19s', // ⛔ Replace this
+        'template_2l35w34', // ⛔ Replace this
+        event.target as HTMLFormElement,
+        'YzsmEVGQ0e8ltSB72',
+      )
+      .then(
+        () => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Sent!',
+            text: 'Your message was sent',
+            confirmButtonColor: '#d4af37',
+          });
+        },
+        (error) => {
+          console.error('Failed...', error);
+          alert('❌ Message sending failed. Please try again.');
+        },
+      );
   }
 }
